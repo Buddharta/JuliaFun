@@ -1,0 +1,24 @@
+#+title: Notas de Julia
+#+Author: Caros Eduardo Martínez Aguilar
+#+OPTIONS: tex:t
+#+LANGUAGE: esp
+#+SETUPFILE: ~/Templates/notes-latex.org
+* Introducción
+Estas son unas notas sobre Julia y Notebooks pensadas para mi, alguien que ya sabe sobre programación y que quiere usar Julia para apliaciones matemáticas y estadística avanzadas. Estas notas son una prueba de como se puede usar Julia en Org-mode y ejecurtar el código desde Emacs, como se puede apreciar, si hacemos el siguiente bloque de código, al presionar C-c C-c:
+#+begin_src julia :results output
+print("Hello, World!")
+#+end_src
+
+#+RESULTS:
+: Hello, World!
+
+El resultado, se presenta en un bloque de "resultado".
+** TODO Se puede hacer un macro para agilizar el proceso:
+** Resultados de cálculos
+Como poemos ver podemos calcular los resultados de cálculos al estilo de un Jupyter notebook de Python.
+#+begin_src julia :results output
+x = 2 + 3
+#+end_src
+
+#+RESULTS:
+: 5

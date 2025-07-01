@@ -1,5 +1,4 @@
 using Plots
-using PlotThemes
 
 function DirichletVect(N::Int64)
     D=[x->sin((n+1/2)*x)/(2*sin(x/2)) for n in 1:N]
